@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	 int n, o, rem, sum=0, fact, i;
+	 scanf("%d", &n);
+	 o = n;
+	 while(n != 0)
+	 {
+		  rem = n%10;
+		  fact = 1;
+		  for(i=1; i<=rem; i++)
+		  {
+		   	fact = fact*i;
+		  }
+		sum = sum + fact;
+		  n = n/10;
+	 }
+	 if(sum == o)
+	 {
+	  	printf("%d is strong", o);
+	 }
+	 else
+	 {
+	  	printf("%d is not strong", o);
+	 }
+    return(0);
+}
